@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nature Compiler — Legal Documents</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafaf8;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e5e5e0;
+      padding: 48px 40px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .logo { font-size: 48px; margin-bottom: 16px; }
+    h1 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    p { font-size: 14px; color: #777; margin-bottom: 36px; line-height: 1.6; }
+    .links { display: flex; flex-direction: column; gap: 12px; }
+    a.doc-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px;
+      border-radius: 12px;
+      border: 1px solid #e5e5e0;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    a.doc-link:hover {
+      border-color: #4ade80;
+      box-shadow: 0 0 0 3px rgba(74,222,128,0.12);
+    }
+    .doc-icon { font-size: 28px; flex-shrink: 0; }
+    .doc-text { text-align: left; }
+    .doc-title { font-size: 15px; font-weight: 700; display: block; margin-bottom: 2px; }
+    .doc-sub { font-size: 12px; color: #999; }
+    footer { margin-top: 32px; font-size: 12px; color: #bbb; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🌿</div>
+    <h1>Nature Compiler</h1>
+    <p>TikTok content automation tool for nature video compilations. Legal documents are available below.</p>
+
+    <div class="links">
+      <a class="doc-link" href="./privacy-policy.html">
+        <div class="doc-icon">🔒</div>
+        <div class="doc-text">
+          <span class="doc-title">Privacy Policy</span>
+          <span class="doc-sub">How we collect and handle your data</span>
+        </div>
+      </a>
+      <a class="doc-link" href="./terms-of-service.html">
+        <div class="doc-icon">📄</div>
+        <div class="doc-text">
+          <span class="doc-title">Terms of Service</span>
+          <span class="doc-sub">Rules and conditions for using the app</span>
+        </div>
+      </a>
+    </div>
+
+    <footer>United Kingdom &nbsp;·&nbsp; <span id="year"></span></footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
